@@ -89,6 +89,23 @@ const humanOne = {
 }
 
 const humanTwo = {
-    name: 'Arek',
+    name: 'Arekk',
     age: 25,
 }
+
+const greet = (age, name) => {
+    console.log(`Hello! Welcome on my website. I'm ${name} and I'm ${age} old. Have fun! :D`);
+}
+greet(25,'Arek');
+
+const calculate = (number) => number*5
+const result = calculate(5);
+console.log(result)
+
+const hello = (querySelectorNew, content) => {
+   const element = document.querySelector(querySelectorNew);
+    element.innerHTML = content;
+}
+
+
+hello('.welcome__heading--js',`Hello! My name is ${humanTwo.name}`)
